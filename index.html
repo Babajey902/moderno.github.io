@@ -16,7 +16,7 @@
         }
 
         header {
-            background-color: #000000; /* Indigo header background */
+            background-color: #4b0082; /* Indigo header background */
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -40,6 +40,15 @@
 
         section {
             padding: 20px;
+        }
+
+        .code-snippet {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: auto;
         }
 
         footer {
@@ -72,6 +81,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#download">Download</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tutorial">Tutorial</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -85,7 +97,42 @@
     <section id="download">
         <h2>Download Moderno</h2>
         <p>Get started with Moderno today. Click the link below to download the latest version:</p>
-        <a href="#your-download-link" class="btn btn-primary" target="_blank">Download Moderno</a>
+        <a href="./downloads/Moderno.msi" class="btn btn-primary" target="_blank">Download Moderno</a>
+    </section>
+
+    <section id="tutorial">
+        <h2>Tutorial</h2>
+        <p>Learn how to use Moderno with these code snippets:</p>
+
+        <div class="code-snippet">
+            <h3>Example 1: Hello World in C++</h3>
+            <pre>
+                <code class="language-cpp">
+                    #include &lt;iostream&gt;
+                    
+                    int main() {
+                        std::cout << "Hello, World!" << std::endl;
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="code-snippet">
+            <h3>Example 2: Hello World using Moderno</h3>
+            <pre>
+                <code class="language-cpp">
+                    #include "modernopp/modernopp.hpp";
+                    
+                    using namespace moderno;
+                    int main() {
+                        println("Hello World");
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </div>
+        <!-- Add more code snippets as needed -->
     </section>
 
     <footer class="footer mt-auto py-3">
